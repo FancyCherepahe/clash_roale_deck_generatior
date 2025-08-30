@@ -122,8 +122,8 @@ flex-grow: 0;
 
     /* Adobe Express - file 1 */
 
-width: 340.76px;
-height: 340.76px;
+width: 200px;
+height: 200px;
 
 
 transform: rotate(15deg);
@@ -132,5 +132,19 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
+
+}
+.emote{
+    /* Vector */
+
+width: 34px;
+height: 32px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
 
 }
