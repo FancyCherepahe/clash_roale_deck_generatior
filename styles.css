@@ -1,1 +1,136 @@
+body{
 
+    margin:0;
+}
+
+.nav-bar{
+
+
+    /* Component 5 */
+
+position: relative;
+width: 100%;
+height: 241px;
+/* Frame 8 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 339px;
+
+position: absolute;
+background-color: #211E6D;
+
+}
+
+
+.logo-container{
+
+/* Frame 25 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+
+
+
+
+
+}
+
+.logo-text{
+
+
+    /* Frame 24 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.logo-title
+{
+
+/* ClashBuilder */
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+
+background: linear-gradient(90deg, #CAE025 0%, #EEFF00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.logo-subtitle{
+/* Генератор колод */
+margin: 0px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: rgba(201, 191, 191, 0.5);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+
+flex-grow: 0;
+
+}
+
+.logo{
+
+
+
+    /* Adobe Express - file 1 */
+
+width: 340.76px;
+height: 340.76px;
+
+
+transform: rotate(15deg);
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
