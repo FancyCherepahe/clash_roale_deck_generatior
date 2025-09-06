@@ -1,150 +1,141 @@
-body{
-
-    margin:0;
+/* Забираємо відступи у всього документа */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-bar{
+body {
+    min-height: 100vh;
+    background: linear-gradient(163.03deg, #333DF6 0.54%, #9C14B1 49.79%, #3506A3 100%);
+}
 
+/* Ваш header */
+header {
+    margin: 0; /* прибираємо зовнішні відступи */
+    padding: 0; /* якщо не потрібно, прибираємо внутрішні відступи */
+}
+/* === BODY === */
+body {
+    min-height: 100vh;
+    background: linear-gradient(163.03deg, #333DF6 0.54%, #9C14B1 49.79%, #3506A3 100%);
+}
 
-    /* Component 5 */
+/* === NAVBAR / HEADER === */
+.nav-bar {
+    width: 100%;
+    height: 241px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #211E6D;
+    position: relative; /* absolute тут не потрібен */
+}
 
-position: relative;
-width: 100%;
-height: 241px;
-/* Frame 8 */
+/* Логотип і текст */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 339px;
+.logo {
+    width: 200px;
+    height: 200px;
+    transform: rotate(15deg);
+}
 
-position: absolute;
-background-color: #211E6D;
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    background: linear-gradient(90deg, #CAE025 0%, #EEFF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(201, 191, 191, 0.5);
+    margin-top: 0;
+}
+
+/* === MAIN TEXT === */
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 200px;
+}
+
+.container-main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-
-.logo-container{
-
-/* Frame 25 */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-
-position: absolute;
-
-
-
-
-
+.s-m {
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 116px;
+    text-align: center;
+    background: radial-gradient(47.54% 67.48% at 50% 50%, #FFFAE6 0%, #FFCC00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.logo-text{
-
-
-    /* Frame 24 */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+.s-d {
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 116px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.logo-title
-{
+/* === EMOTE === */
+.emote {
+    width: 34px;
+    height: 32px;
+}
 
-/* ClashBuilder */
+.p-s{
+
+
+    /* Створюйте ідеальні колоди для Clash Royale з нашим розумним генератором */
 
 
 
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
-line-height: 48px;
+font-size: 22px;
+line-height: 39px;
+text-align: center;
 
-background: linear-gradient(90deg, #CAE025 0%, #EEFF00 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+color: #D2E8EB;
 
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-}
-
-.logo-subtitle{
-/* Генератор колод */
-margin: 0px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-color: rgba(201, 191, 191, 0.5);
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-
-flex-grow: 0;
-
-}
-
-.logo{
-
-
-
-    /* Adobe Express - file 1 */
-
-width: 200px;
-height: 200px;
-
-
-transform: rotate(15deg);
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-}
-.emote{
-    /* Vector */
-
-width: 34px;
-height: 32px;
-
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
 
 }
