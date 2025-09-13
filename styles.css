@@ -129,13 +129,138 @@ body {
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
+
 font-size: 22px;
 line-height: 39px;
 text-align: center;
+=======
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: rgba(201, 191, 191, 0.5);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+
+flex-grow: 0;
+
+}
+
+.logo{
+
+
+
+    /* Adobe Express - file 1 */
+
+width: 100px;
+height: 100px;
+
+
+transform: rotate(15deg);
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+.emote{
+    /* Vector */
+
 
 color: #D2E8EB;
 
 
 
 
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0.5rem; /* зменшено на половину */
+    gap: 1.5rem; /* зменшено на половину */
+    width: 100%;
+    background: linear-gradient(90.4deg, #0B2C73 0.31%, #9E27A9 50.46%, #3A1BAA 99.66%);
+    box-sizing: border-box;
+}
+
+/* ========== LOGO FOOTER ========== */
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* зменшено на половину */
+    max-width: 576px; /* зменшено на половину */
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ========== LOGO + TEXT CONTAINER ========== */
+.logo-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* зменшено на половину */
+    width: 100%;
+}
+
+/* ========== LOGO IMAGE ========== */
+.logo-footer-container img.logo {
+    width: 60px; /* зменшено на половину */
+    height: auto;
+}
+
+/* ========== TEXT LOGO CONTAINER ========== */
+.text-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem; /* зменшено на половину */
+}
+
+/* ========== MAIN LOGO TEXT ========== */
+.f-logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem; /* зменшено на половину */
+    line-height: 2.40625rem; /* зменшено на половину */
+    text-align: center;
+    background: linear-gradient(88.17deg, #FFB61A 7.13%, #FFFFFF 59.22%, #FFD479 86.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+/* ========== SUBTITLE LOGO TEXT ========== */
+.s-logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem; /* зменшено на половину */
+    line-height: 1.375rem; /* зменшено на половину */
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+/* ========== DESCRIPTION TEXT ========== */
+.p-style {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem; /* зменшено на половину */
+    line-height: 0.90625rem; /* зменшено на половину */
+    text-align: center;
+    color: #7495FF;
+    max-width: 450px; /* зменшено на половину */
+    margin: 1rem auto 0 auto; /* зменшено на половину */
+    padding: 0 0.5rem; /* зменшено на половину */
 }
