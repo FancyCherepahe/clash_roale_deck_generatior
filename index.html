@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class = 'nav-bar'>
@@ -17,14 +18,14 @@
         </div>
         <div class="nav-links">
             <span>
-                <img src="emote1.png" class="emote" alt="emote1">
+                <img src="emote1.png" class="emote-size-1" alt="emote1">
                 <a class="logo-subtitle">Генератор</a>
             </span>
             <a class="logo-subtitle">Картки</a>
             <a class="logo-subtitle">Колоди</a>
             <span>
                 <a class="logo-subtitle">Мета</a>
-                <img src="emote2.png" class="emote" alt="emote2">
+                <img src="emote2.png" class="emote-size-1" alt="emote2">
             </span>
         </div>
     </div>
@@ -42,26 +43,75 @@
             </p>
         </div>
         <div class = "container-button-text">
-            <div class = "container-sosiska" >
-                <p class='n-m'>Всі арени</p>
-                <div class = "container-arrow-down">
-                    <img src="arrow_down.png">
+            <div class="full-generator-button-div">
+                <div class = "arena-choose-container">
+                    <p class='n-m'>Всі арени</p>
+                    <img src="arrow_down.png" alt="arrow">
                 </div>
+                    <button class="container-button">
+                        <img src="arrow_right.png" alt="arrow">
+                        <h2 class="n-d">Згенерувати колоду</h2>
+                    </button>
             </div>
-            <div class = "container-button">
-                <div class = "container-arrow-right">
-                    <img src="arrow_right.png">
+            <div class="deck-container">
+                <div class="deck-title-container">
+                    <img src="emote7.png" class="emote-size-3" alt="deck-logo">
+                    <h1 class="tips-title">Ваша Колода</h1>
                 </div>
-                <p class="n-d">Згенерувати колоду</p>
+                <div class="deck-main">
+                    <img src="emote8.png" class="emote-size-3" class="" alt="emote8"> 
+                    <p class="p-s">Натисніть "Згенерувати колоду" для початку</p>
+                </div>
+                <div class="cards-div">
+                    <div class="single-card-div">
+                        <div class="card-text-div">
+                            <p class="card-text">name</p>
+                            <p class="card-text">cost</p>
+                        </div>
+                    </div>
+                    <div class="single-card-div">
+                        <div class="card-text-div">
+                            <p class="card-text">name</p>
+                            <p class="card-text">cost</p>
+                        </div>
+                    </div>
+                    <div class="single-card-div">
+                        <div class="card-text-div">
+                            <p class="card-text">name</p>
+                            <p class="card-text">cost</p>
+                        </div>
+                    </div>
+                    <div class="single-card-div">
+                        <div class="card-text-div">
+                            <p class="card-text">name</p>
+                            <p class="card-text">cost</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="tips-container">
                 <div class="tips-title-container">
-                    <img src="emote3.png" id="emote3" alt="emote3">
-                    <h1 class="tips-title">Поради для створення колод</h1>
+                    <img src="emote3.png" class="emote-size-2" alt="emote3">
+                    <h1 class="tips-title" class="title-shift">Поради для створення колод</h1>
+                </div>
+                <div class="tips-div">
+                    <div class="tip">
+                        <img src="emote4.png" class="emote-for-tips" alt="emote4">
+                        <h2 class="tips-title">Баланс</h2>
+                        <p class="tips-text">Тримайте середню вартість еліксіру 3.5-4.5 для оптимального балансу</p>
+                    </div>     
+                    <div class="tip">
+                        <img src="emote5.png" class="emote-for-tips" alt="emote5">
+                        <h2 class="tips-title">Захист</h2>
+                        <p class="tips-text">Включайте картки для захисту від повітряних та наземних атак</p>
+                    </div>     
+                    <div class="tip">
+                        <img src="emote6.png" class="emote-for-tips" alt="emote6">
+                        <h2 class="tips-title">Синергія</h2>
+                        <p class="tips-text">Вибирайте картки, що доповнюють одна одну в комбо</p>
+                    </div>
                 </div>     
-                <div>
-                    <img>
-                </div>          
             </div>
         </div>
     </div>
