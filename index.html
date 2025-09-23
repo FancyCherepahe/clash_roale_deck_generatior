@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    
 </head>
 <body>
     <div class = 'nav-bar'>
         <div class = 'logo-container'>
-            <img class ='logo' src="logo.png" alt = 'Logo'>
+            <img class ='logo' src="emotes/logo.png" alt = 'Logo'>
             <div class = 'logo-text'>
                 <h1 class = 'logo-title'><span class="yellow-part-of-title">Clash</span>Builder</h1>
                 <p class = 'logo-subtitle'>Генератор колод</p>
@@ -18,14 +19,14 @@
         </div>
         <div class="nav-links">
             <span>
-                <img src="emote1.png" class="emote-size-1" alt="emote1">
+                <img src="emotes/emote1.png" class="emote-size-1" alt="emote1">
                 <a class="logo-subtitle">Генератор</a>
             </span>
             <a class="logo-subtitle">Картки</a>
             <a class="logo-subtitle">Колоди</a>
             <span>
                 <a class="logo-subtitle">Мета</a>
-                <img src="emote2.png" class="emote-size-1" alt="emote2">
+                <img src="emotes/emote2.png" class="emote-size-1" alt="emote2">
             </span>
         </div>
     </div>
@@ -46,68 +47,104 @@
             <div class="full-generator-button-div">
                 <div class = "arena-choose-container">
                     <p class='n-m'>Всі арени</p>
-                    <img src="arrow_down.png" alt="arrow">
+                    <img src="emotes/arrow_down.png" alt="arrow">
                 </div>
                     <button class="container-button">
-                        <img src="arrow_right.png" alt="arrow">
+                        <img src="emotes/arrow_right.png" alt="arrow">
                         <h2 class="n-d">Згенерувати колоду</h2>
                     </button>
             </div>
             <div class="deck-container">
                 <div class="deck-title-container">
-                    <img src="emote7.png" class="emote-size-3" alt="deck-logo">
+                    <img src="emotes/emote7.png" class="emote-size-3" alt="deck-logo">
                     <h1 class="tips-title">Ваша Колода</h1>
                 </div>
                 <div class="deck-main">
-                    <img src="emote8.png" class="emote-size-3" class="" alt="emote8"> 
+                    <img src="emotes/emote8.png" class="emote-size-3" class="" alt="emote8"> 
                     <p class="p-s">Натисніть "Згенерувати колоду" для початку</p>
                 </div>
-                <div class="cards-div">
-                    <div class="single-card-div">
-                        <div class="card-text-div">
-                            <p class="card-text">name</p>
-                            <p class="card-text">cost</p>
+                <div class="all-cards-div">
+                    <div class="cards-div">
+                        <div class="single-card-div">
+                            <img src="building_icons/BarbarianHutCard.png"class="building-image" class="card-image"  alt="Barbarian Hut">
+                            <div class="card-text-div">
+                                <p class="building" class="card-text">name</p>
+                                <p class="building-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="air_troop_icons/MegaMinionCard.webp" class="air-troop-image card-image" alt="Minions">
+                            <div class="card-text-div">
+                                <p class="air-troop" class="card-text">name</p>
+                                <p class="air-troop-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="troops_that_go_to_tower_icons/GiantCard.webp" class="win-condition-image card-image" alt="Giant">
+                            <div class="card-text-div">
+                                <p class="win-condition" class="card-text">name</p>
+                                <p class="win-condition-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="small_spell_icons/ArrowsCard.webp" class="small-spell-image card-image" alt="Arrows">
+                            <div class="card-text-div">
+                                <p class="small-spell" class="card-text">name</p>
+                                <p class="small-spell-cost" class="card-text">cost</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="single-card-div">
-                        <div class="card-text-div">
-                            <p class="card-text">name</p>
-                            <p class="card-text">cost</p>
+                    <div class="cards-div">
+                        <div class="single-card-div">
+                            <img src="big_spell_icons/FireballCard.webp" class="big-spell-image card-image" alt="Fireball">
+                            <div class="card-text-div">
+                                <p class="big-spell" class="card-text">name</p>
+                                <p class="big-spell-cost" class="card-text">cost</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="single-card-div">
-                        <div class="card-text-div">
-                            <p class="card-text">name</p>
-                            <p class="card-text">cost</p>
+                        <div class="single-card-div">
+                            <img src="mini_tank_icons/KnightCard.webp" class="mini-tank-image card-image" alt="Knight">
+                            <div class="card-text-div">
+                                <p class="mini-tank" class="card-text">name</p>
+                                <p class="mini-tank-cost" class="card-text">cost</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="single-card-div">
-                        <div class="card-text-div">
-                            <p class="card-text">name</p>
-                            <p class="card-text">cost</p>
+                        <div class="single-card-div">
+                            <img src="damage_dealer_icons/MusketeerCard.webp" class="damage-dealer-image card-image" alt="Musketeer">
+                            <div class="card-text-div">
+                                <p class="damage-dealer" class="card-text">name</p>
+                                <p class="damage-dealer-cost" class="card-text">cost</p>
+                            </div>
+                        </div>
+                        <div class="single-card-div">
+                            <img src="support_icons/WitchCard.webp" class="support-image card-image" alt="Witch">
+                            <div class="card-text-div">
+                                <p class="support" class="card-text">name</p>
+                                <p class="support-cost" class="card-text">cost</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+                
             <div class="tips-container">
                 <div class="tips-title-container">
-                    <img src="emote3.png" class="emote-size-2" alt="emote3">
+                    <img src="emotes/emote3.png" class="emote-size-2" alt="emote3">
                     <h1 class="tips-title" class="title-shift">Поради для створення колод</h1>
                 </div>
                 <div class="tips-div">
                     <div class="tip">
-                        <img src="emote4.png" class="emote-for-tips" alt="emote4">
+                        <img src="emotes/emote4.png" class="emote-for-tips" alt="emote4">
                         <h2 class="tips-title">Баланс</h2>
                         <p class="tips-text">Тримайте середню вартість еліксіру 3.5-4.5 для оптимального балансу</p>
                     </div>     
                     <div class="tip">
-                        <img src="emote5.png" class="emote-for-tips" alt="emote5">
+                        <img src="emotes/emote5.png" class="emote-for-tips" alt="emote5">
                         <h2 class="tips-title">Захист</h2>
                         <p class="tips-text">Включайте картки для захисту від повітряних та наземних атак</p>
                     </div>     
                     <div class="tip">
-                        <img src="emote6.png" class="emote-for-tips" alt="emote6">
+                        <img src="emotes/emote6.png" class="emote-for-tips" alt="emote6">
                         <h2 class="tips-title">Синергія</h2>
                         <p class="tips-text">Вибирайте картки, що доповнюють одна одну в комбо</p>
                     </div>
@@ -121,7 +158,7 @@
 <footer>
    <div class ='logo-footer'>
         <div class = 'logo-footer-container'>
-            <img class ='logo' src="logo.png">
+            <img class ='logo' src="emotes/logo.png">
             <div class="text-logo-container">
                 <h1 class="f-logo-text">Clash Builder</h1>
                 <p class="s-logo-text">Генератор колод для Clash Royal</p>
@@ -131,5 +168,6 @@
 Використовуйте наш розумний генератор, вивчайте мету та покращуйте свою гру з
  найкращими колодами від топових гравців.</p>
    </div>
+   <script defer src="script.js"></script>
 </footer>
 </html>

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     margin: 0;
@@ -159,6 +160,9 @@ color:white;
 
 .deck-container{
     /* Card */
+margin-left: auto;
+margin-right: auto;
+
 
 box-sizing: border-box;
 
@@ -191,10 +195,17 @@ flex-grow: 0;
     flex-direction: column;
     margin-top: 15%;
 }
+.all-cards-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+}
 
 .cards-div{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .single-card-div{
@@ -211,8 +222,19 @@ text-align: center;
 }
 
 .card-text-div{
-    padding-top: 80%;
+    padding-top: 10%;
     gap: 20px;
+}
+.building-image{
+    padding-top: 5%;
+    width: 100px;
+    height: 120px;
+    
+}
+.card-image{
+    padding-top: 5%;
+    width: 100px;
+    height: 120px;
 }
 
 .tips-title-container{
@@ -256,7 +278,7 @@ text-align: center;
 position: relative;
 width: 1230px;
 height: 300px;
-padding-bottom: 15%;
+margin-top: 10%;
 
 background: radial-gradient(50% 50% at 50% 50%, #6C1BC3 0%, #340D5D 100%);
 border: 3px solid rgba(253, 241, 241, 0.55);
