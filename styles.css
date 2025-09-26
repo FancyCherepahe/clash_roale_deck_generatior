@@ -26,6 +26,14 @@ body {
     background: linear-gradient(163.03deg, #333DF6 0.54%, #9C14B1 49.79%, #3506A3 100%);
 }
 
+.justify-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    flex-wrap: none;
+    gap: 110px;
+}
+
 /* === NAVBAR / HEADER === */
 .nav-bar {
     width: 100%;
@@ -101,7 +109,7 @@ body {
     padding-bottom: 20%;
 }
 
-.arena-choose-container{
+.deck-type-choose-container{
     
     /* Frame 4 */
 
@@ -131,6 +139,14 @@ color:white;
 
 }
 
+option{
+    background-color:#161293;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+
 .container-button{
     /* button */
 
@@ -150,7 +166,6 @@ border-radius: 10px;
 
 /* Inside auto layout */
 flex: none;
-order: 1;
 flex-grow: 0;
 
 cursor: pointer;
@@ -235,6 +250,13 @@ text-align: center;
     padding-top: 5%;
     width: 100px;
     height: 120px;
+}
+
+.avarage-elixir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .tips-title-container{
