@@ -45,14 +45,36 @@
         </div>
         <div class = "container-button-text">
             <div class="full-generator-button-div">
-                <div class = "arena-choose-container">
-                    <p class='n-m'>Всі арени</p>
-                    <img src="emotes/arrow_down.png" alt="arrow">
-                </div>
-                    <button class="container-button">
-                        <img src="emotes/arrow_right.png" alt="arrow">
-                        <h2 class="n-d">Згенерувати колоду</h2>
-                    </button>
+                    
+                    <select id="arena-select" class="deck-type-choose-container">
+                        <option value="noChoose" selected>Choose your arena</option>
+                        <option value="under&5">5`th & under arenas</option>
+                        <option value="6">6`th arena</option>
+                        <option value="7">7`th arena</option>
+                        <option value="8">8`th arena</option>
+                        <option value="9">9`th arena</option>
+                        <option value="10">10`th arena</option>
+                        <option value="11">11`th arena</option>
+                        <option value="12">12`th arena</option>
+                        <option value="13">13`th arena</option>
+                        <option value="14">14`th arena</option>
+                        <option value="15">15`th arena</option>
+                        <option value= 16>16`th and above</option>
+                    </select>
+                <button class="container-button">
+                    <img src="emotes/arrow_right.png" alt="arrow">
+                    <h2 class="n-d">Згенерувати колоду</h2>
+                </button>
+                <select id="deck-type-select" class="deck-type-choose-container">
+                        <option value="noChoose" selected>Choose deck type</option>
+                        <option value="all">Full Random</option>
+                        <option value="cycle">Cylce</option>
+                        <option value="bait">Bait</option>
+                        <option value="beatdown">Beatdown</option>
+                        <option value="control">Control</option>
+                        <option value="siege">Siege</option>
+                        <option value="bridgeSpam">Bridge Spam</option>
+                    </select>
             </div>
             <div class="deck-container">
                 <div class="deck-title-container">
@@ -123,6 +145,9 @@
                                 <p class="support-cost" class="card-text">cost</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="avarage-elixir">
+                        <h2 class="">Середня вартість еліксіру: </h2>
                     </div>
                 </div>
             </div>
