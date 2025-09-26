@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     margin: 0;
@@ -36,6 +37,8 @@ body {
     background-color: #211E6D;
     position: relative; /* absolute тут не потрібен */
     gap: 390px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.553);
 }
 
 /* Логотип і текст */
@@ -89,15 +92,200 @@ body {
 
 }
 
+.full-generator-button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+    padding-bottom: 20%;
+}
+
+.arena-choose-container{
+    
+    /* Frame 4 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+gap: 99px;
+
+width: 262px;
+height: 53px;
+
+background: linear-gradient(90deg, #211E6D 0%, #761578 100%);
+border-radius: 15px;
+border: 2px solid rgba(255, 255, 255, 0.553);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+color:white;
+
+}
+
+.container-button{
+    /* button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 31px;
+
+width: 450px;
+height: 75px;
+
+background: linear-gradient(90deg, #FD8E10 0%, #E21F1F 100%);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+cursor: pointer;
+
+color:white;
+}
+
+.deck-container{
+    /* Card */
+margin-left: auto;
+margin-right: auto;
+
+
+box-sizing: border-box;
+
+width: 1000px;
+height: 600px;
+
+background: linear-gradient(108.97deg, #A689A7 12.57%, #7413A2 90.11%);
+border-radius: 30px;
+border-color: d;
+border:whitesmoke 2px solid;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.deck-title-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.deck-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.all-cards-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+}
+
+.cards-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.single-card-div{
+    /* Rectangle 3 */   
+
+background: linear-gradient(157.99deg, #9561A5 1.91%, #7D27A3 98.25%);
+border: 3px solid #000000;
+border-radius: 15px;
+
+width: 150px;
+height: 200px;   
+
+text-align: center;
+}
+
+.card-text-div{
+    padding-top: 10%;
+    gap: 20px;
+}
+.building-image{
+    padding-top: 5%;
+    width: 100px;
+    height: 120px;
+    
+}
+.card-image{
+    padding-top: 5%;
+    width: 100px;
+    height: 120px;
+}
+
 .tips-title-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
+
 .tips-title{
     color:white;
 }
+
+.tips-text{
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+}
+
+.tips-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tips-container{
+    /* Component 15 */
+
+position: relative;
+width: 1230px;
+height: 300px;
+margin-top: 10%;
+
+background: radial-gradient(50% 50% at 50% 50%, #6C1BC3 0%, #340D5D 100%);
+border: 3px solid rgba(253, 241, 241, 0.55);
+border-radius: 15px;
+
+}
+
 /* === MAIN TEXT === */
 .main-text {
     display: flex;
@@ -142,14 +330,24 @@ body {
 }
 
 /* === EMOTE === */
-.emote {
+.emote-size-1{
     width: 20px;
     height: 20px;
 }
 
-#emote3{
+.emote-size-2{
     width: 48px;
     height: 48px;
+}
+
+.emote-size-3{
+    width: 100px;
+    height: 100px;
+}
+
+.emote-for-tips{
+    width: 120px;
+    height: 120px;
 }
 
 .p-s{
@@ -223,6 +421,9 @@ footer {
     width: 100%;
     background: linear-gradient(90.4deg, #0B2C73 0.31%, #9E27A9 50.46%, #3A1BAA 99.66%);
     box-sizing: border-box;
+    border-top: 2px solid rgba(255, 255, 255, 0.553);
+    margin-top: 10%; /* відокремлюємо від основного контенту */
+
 }
 
 /* ========== LOGO FOOTER ========== */
@@ -298,15 +499,3 @@ footer {
     padding: 0 0.5rem; /* зменшено на половину */
 }
 
-.tips-container{
-    /* Component 15 */
-
-position: relative;
-width: 1230px;
-height: 300px;
-
-background: radial-gradient(50% 50% at 50% 50%, #6C1BC3 0%, #340D5D 100%);
-border: 3px solid rgba(253, 241, 241, 0.55);
-border-radius: 15px;
-
-}
