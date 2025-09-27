@@ -795,7 +795,7 @@ generateButton.addEventListener("click", function() {
             let bigSpellImage = document.querySelector(".big-spell-image")
             bigSpellImage.src = randomBigSpell.src;
             
-            let filteredMiniTanks = miniTanks.filter(miniTank => miniTank.arena === ("under&5") || miniTank.arena === ("6") || miniTank.arena === ("7") || miniTank.arena === ("8") || miniTank.arena === ("9") || miniTank.arena === ("10") || miniTank === ("11") || miniTank === ("12"));
+            let filteredMiniTanks = miniTanks.filter(miniTank => miniTank.arena === ("under&5") || miniTank.arena === ("6") || miniTank.arena === ("7") || miniTank.arena === ("8") || miniTank.arena === ("9") || miniTank.arena === ("10") || miniTank.arena === ("11") || miniTank.arena === ("12"));
             const randomMiniTank = filteredMiniTanks[Math.floor(Math.random() * filteredMiniTanks.length)];
             let miniTankCard = document.querySelector(".mini-tank")
             let miniTankCostCard = document.querySelector(".mini-tank-cost")
@@ -834,7 +834,263 @@ generateButton.addEventListener("click", function() {
             averageElixirCard.style.color = "red";
           }
         }
-      
+      if (arena === "13"){
+            let filteredBuildings = buildings.filter(building => building.arena.includes("under&5") || building.arena.includes("6") || building.arena.includes("7") || building.arena.includes("8") || building.arena.includes("9") || building.arena.includes("10") || building.arena.includes("11") || building.arena.includes("12") || building.arena.includes("13"));
+            const randomBuilding = filteredBuildings[Math.floor(Math.random() * filteredBuildings.length)];
+            let buildingCard = document.querySelector(".building")
+            let buildingCostCard = document.querySelector(".building-cost") 
+            buildingCard.innerHTML = randomBuilding.name;
+            buildingCostCard.innerHTML = randomBuilding.cost;
+            let buildingImage = document.querySelector(".building-image")
+            buildingImage.src = randomBuilding.src;
+            
+            let filteredAirTroops = airTroops.filter(airTroop => airTroop.arena.includes("under&5") || airTroop.arena.includes("6") || airTroop.arena.includes("7") || airTroop.arena.includes("8") || airTroop.arena.includes("9") || airTroop.arena.includes("10") || airTroop.arena.includes("11") || airTroop.arena.includes("12") || airTroop.arena.includes("13"));
+            const randomAirTroop = filteredAirTroops[Math.floor(Math.random() * filteredAirTroops.length)];
+            let airTroopCard = document.querySelector(".air-troop") 
+            let airTroopCostCard = document.querySelector(".air-troop-cost")
+            airTroopCostCard.innerHTML = randomAirTroop.cost;
+            airTroopCard.innerHTML = randomAirTroop.name;
+            let airTroopImage = document.querySelector(".air-troop-image")
+            airTroopImage.src = randomAirTroop.src;
+
+            let filteredTroopsThatGoToTower = troopsThatGoToTower.filter(troopThatGoesToTower => troopThatGoesToTower.arena.includes("under&5") || troopThatGoesToTower.arena.includes("6") || troopThatGoesToTower.arena.includes("7") || troopThatGoesToTower.arena.includes("8") || troopThatGoesToTower.arena.includes("9") || troopThatGoesToTower.arena.includes("10") || troopThatGoesToTower.arena.includes("11") || troopThatGoesToTower.arena.includes("12") || troopThatGoesToTower.arena.includes("13"));
+            const randomTroopThatGoesToTower = filteredTroopsThatGoToTower[Math.floor(Math.random() * filteredTroopsThatGoToTower.length)];
+            let winConditionCard = document.querySelector(".win-condition") 
+            let winConditionCostCard = document.querySelector(".win-condition-cost")
+            winConditionCostCard.innerHTML = randomTroopThatGoesToTower.cost;
+            winConditionCard.innerHTML = randomTroopThatGoesToTower.name;
+            let winConditionImage = document.querySelector(".win-condition-image")
+            winConditionImage.src = randomTroopThatGoesToTower.src;
+            
+            let filteredSmallSpells = smallSpells.filter(smallSpell => smallSpell.arena.includes("under&5") || smallSpell.arena.includes("6") || smallSpell.arena.includes("7") || smallSpell.arena.includes("8") || smallSpell.arena.includes("9") || smallSpell.arena.includes("10") || smallSpell.arena.includes("11") || smallSpell.arena.includes("12") || smallSpell.arena.includes("13"));    
+            const randomSmallSpell = filteredSmallSpells[Math.floor(Math.random() * filteredSmallSpells.length)];
+            let smallSpellCard = document.querySelector(".small-spell") 
+            let smallSpellCostCard = document.querySelector(".small-spell-cost")
+            smallSpellCostCard.innerHTML = randomSmallSpell.cost;
+            smallSpellCard.innerHTML = randomSmallSpell.name;
+            let smallSpellImage = document.querySelector(".small-spell-image")
+            smallSpellImage.src = randomSmallSpell.src;
+            
+            let filteredBigSpells = bigSpells.filter(bigSpell => bigSpell.arena.includes("under&5") || bigSpell.arena.includes("6") || bigSpell.arena.includes("7") || bigSpell.arena.includes("8") || bigSpell.arena.includes("9") || bigSpell.arena.includes("10") || bigSpell.arena.includes("11") || bigSpell.arena.includes("12") || bigSpell.arena.includes("13"));
+            const randomBigSpell = filteredBigSpells[Math.floor(Math.random() * filteredBigSpells.length)];
+            let bigSpellCard = document.querySelector(".big-spell")
+            let bigSpellCostCard = document.querySelector(".big-spell-cost")
+            bigSpellCostCard.innerHTML = randomBigSpell.cost; 
+            bigSpellCard.innerHTML = randomBigSpell.name;
+            let bigSpellImage = document.querySelector(".big-spell-image")
+            bigSpellImage.src = randomBigSpell.src;
+            
+            let filteredMiniTanks = miniTanks.filter(miniTank => miniTank.arena === ("under&5") || miniTank.arena === ("6") || miniTank.arena === ("7") || miniTank.arena === ("8") || miniTank.arena === ("9") || miniTank.arena === ("10") || miniTank.arena === ("11") || miniTank.arena === ("12") || miniTank.arena === ("13"));
+            const randomMiniTank = filteredMiniTanks[Math.floor(Math.random() * filteredMiniTanks.length)];
+            let miniTankCard = document.querySelector(".mini-tank")
+            let miniTankCostCard = document.querySelector(".mini-tank-cost")
+            miniTankCostCard.innerHTML = randomMiniTank.cost;
+            miniTankCard.innerHTML = randomMiniTank.name;
+            let miniTankImage = document.querySelector(".mini-tank-image")
+            miniTankImage.src = randomMiniTank.src;
+            
+            let filteredDamageDealers = damageDealers.filter(damageDealer => damageDealer.arena === ("under&5") || damageDealer.arena === ("6") || damageDealer.arena === ("7") || damageDealer.arena === ("8") || damageDealer.arena === ("9") || damageDealer.arena === ("10") || damageDealer.arena === ("11") || damageDealer.arena === ("12") || damageDealer.arena === ("13"));
+            const randomDamageDealer = filteredDamageDealers[Math.floor(Math.random() * filteredDamageDealers.length)];
+            let damageDealerCard = document.querySelector(".damage-dealer")
+            let damageDealerCostCard = document.querySelector(".damage-dealer-cost")
+            damageDealerCostCard.innerHTML = randomDamageDealer.cost;
+            damageDealerCard.innerHTML = randomDamageDealer.name;
+            let damageDealerImage = document.querySelector(".damage-dealer-image")
+            damageDealerImage.src = randomDamageDealer.src;
+            
+            let filteredSupport = support.filter(supportCard => supportCard.deckType && supportCard.arena.includes("under&5") || supportCard.arena.includes("6") || supportCard.arena.includes("7") || supportCard.arena.includes("8") || supportCard.arena.includes("9") || supportCard.arena.includes("10") || supportCard.arena.includes("11") || supportCard.arena.includes("12") || supportCard.arena.includes("13"));
+            const randomSupport = filteredSupport[Math.floor(Math.random() * filteredSupport.length)];
+            let supportCard = document.querySelector(".support")
+            const supportCostCard = document.querySelector(".support-cost")
+            supportCostCard.innerHTML = randomSupport.cost;
+            supportCard.innerHTML = randomSupport.name;
+            let supportImage = document.querySelector(".support-image")
+            supportImage.src = randomSupport.src;
+            
+            const averageElixir = (randomBuilding.cost + randomAirTroop.cost + randomTroopThatGoesToTower.cost + randomSmallSpell.cost + randomBigSpell.cost + randomMiniTank.cost + randomDamageDealer.cost + randomSupport.cost) / 8;    
+            console.log("Average elixir cost of this deck is:", averageElixir.toFixed(1));
+            let averageElixirCard = document.querySelector(".avarage-elixir");
+            averageElixirCard.innerHTML = "Середня вартість еліксиру: " + averageElixir.toFixed(1);
+            if (averageElixir <= 3.0) {
+            averageElixirCard.style.color = "green";
+          } else if (averageElixir <= 4.0) {
+            averageElixirCard.style.color = "yellow";
+          } else {
+            averageElixirCard.style.color = "red";
+          }
+      }
+      if (arena === "14"){
+            let filteredBuildings = buildings.filter(building => building.arena.includes("under&5") || building.arena.includes("6") || building.arena.includes("7") || building.arena.includes("8") || building.arena.includes("9") || building.arena.includes("10") || building.arena.includes("11") || building.arena.includes("12") || building.arena.includes("13") || building.arena.includes("14"));
+            const randomBuilding = filteredBuildings[Math.floor(Math.random() * filteredBuildings.length)];
+            let buildingCard = document.querySelector(".building")
+            let buildingCostCard = document.querySelector(".building-cost") 
+            buildingCard.innerHTML = randomBuilding.name;
+            buildingCostCard.innerHTML = randomBuilding.cost;
+            let buildingImage = document.querySelector(".building-image")
+            buildingImage.src = randomBuilding.src;
+            
+            let filteredAirTroops = airTroops.filter(airTroop => airTroop.arena.includes("under&5") || airTroop.arena.includes("6") || airTroop.arena.includes("7") || airTroop.arena.includes("8") || airTroop.arena.includes("9") || airTroop.arena.includes("10") || airTroop.arena.includes("11") || airTroop.arena.includes("12") || airTroop.arena.includes("13") || airTroop.arena.includes("14"));
+            const randomAirTroop = filteredAirTroops[Math.floor(Math.random() * filteredAirTroops.length)];
+            let airTroopCard = document.querySelector(".air-troop") 
+            let airTroopCostCard = document.querySelector(".air-troop-cost")
+            airTroopCostCard.innerHTML = randomAirTroop.cost;
+            airTroopCard.innerHTML = randomAirTroop.name;
+            let airTroopImage = document.querySelector(".air-troop-image")
+            airTroopImage.src = randomAirTroop.src;
+
+            let filteredTroopsThatGoToTower = troopsThatGoToTower.filter(troopThatGoesToTower => troopThatGoesToTower.arena.includes("under&5") || troopThatGoesToTower.arena.includes("6") || troopThatGoesToTower.arena.includes("7") || troopThatGoesToTower.arena.includes("8") || troopThatGoesToTower.arena.includes("9") || troopThatGoesToTower.arena.includes("10") || troopThatGoesToTower.arena.includes("11") || troopThatGoesToTower.arena.includes("12") || troopThatGoesToTower.arena.includes("13") || troopThatGoesToTower.arena.includes("14"));
+            const randomTroopThatGoesToTower = filteredTroopsThatGoToTower[Math.floor(Math.random() * filteredTroopsThatGoToTower.length)];
+            let winConditionCard = document.querySelector(".win-condition") 
+            let winConditionCostCard = document.querySelector(".win-condition-cost")
+            winConditionCostCard.innerHTML = randomTroopThatGoesToTower.cost;
+            winConditionCard.innerHTML = randomTroopThatGoesToTower.name;
+            let winConditionImage = document.querySelector(".win-condition-image")
+            winConditionImage.src = randomTroopThatGoesToTower.src;
+            
+            let filteredSmallSpells = smallSpells.filter(smallSpell => smallSpell.arena.includes("under&5") || smallSpell.arena.includes("6") || smallSpell.arena.includes("7") || smallSpell.arena.includes("8") || smallSpell.arena.includes("9") || smallSpell.arena.includes("10") || smallSpell.arena.includes("11") || smallSpell.arena.includes("12") || smallSpell.arena.includes("13") || smallSpell.arena.includes("14"));    
+            const randomSmallSpell = filteredSmallSpells[Math.floor(Math.random() * filteredSmallSpells.length)];
+            let smallSpellCard = document.querySelector(".small-spell") 
+            let smallSpellCostCard = document.querySelector(".small-spell-cost")
+            smallSpellCostCard.innerHTML = randomSmallSpell.cost;
+            smallSpellCard.innerHTML = randomSmallSpell.name;
+            let smallSpellImage = document.querySelector(".small-spell-image")
+            smallSpellImage.src = randomSmallSpell.src;
+            
+            let filteredBigSpells = bigSpells.filter(bigSpell => bigSpell.arena.includes("under&5") || bigSpell.arena.includes("6") || bigSpell.arena.includes("7") || bigSpell.arena.includes("8") || bigSpell.arena.includes("9") || bigSpell.arena.includes("10") || bigSpell.arena.includes("11") || bigSpell.arena.includes("12") || bigSpell.arena.includes("13") || bigSpell.arena.includes("14"));
+            const randomBigSpell = filteredBigSpells[Math.floor(Math.random() * filteredBigSpells.length)];
+            let bigSpellCard = document.querySelector(".big-spell")
+            let bigSpellCostCard = document.querySelector(".big-spell-cost")
+            bigSpellCostCard.innerHTML = randomBigSpell.cost; 
+            bigSpellCard.innerHTML = randomBigSpell.name;
+            let bigSpellImage = document.querySelector(".big-spell-image")
+            bigSpellImage.src = randomBigSpell.src;
+            
+            let filteredMiniTanks = miniTanks.filter(miniTank => miniTank.arena === ("under&5") || miniTank.arena === ("6") || miniTank.arena === ("7") || miniTank.arena === ("8") || miniTank.arena === ("9") || miniTank.arena === ("10") || miniTank.arena === ("11") || miniTank.arena === ("12") || miniTank.arena === ("13") || miniTank.arena === ("14"));
+            const randomMiniTank = filteredMiniTanks[Math.floor(Math.random() * filteredMiniTanks.length)];
+            let miniTankCard = document.querySelector(".mini-tank")
+            let miniTankCostCard = document.querySelector(".mini-tank-cost")
+            miniTankCostCard.innerHTML = randomMiniTank.cost;
+            miniTankCard.innerHTML = randomMiniTank.name;
+            let miniTankImage = document.querySelector(".mini-tank-image")
+            miniTankImage.src = randomMiniTank.src;
+            
+            let filteredDamageDealers = damageDealers.filter(damageDealer => damageDealer.arena === ("under&5") || damageDealer.arena === ("6") || damageDealer.arena === ("7") || damageDealer.arena === ("8") || damageDealer.arena === ("9") || damageDealer.arena === ("10") || damageDealer.arena === ("11") || damageDealer.arena === ("12") || damageDealer.arena === ("13") || damageDealer.arena === ("14"));
+            const randomDamageDealer = filteredDamageDealers[Math.floor(Math.random() * filteredDamageDealers.length)];
+            let damageDealerCard = document.querySelector(".damage-dealer")
+            let damageDealerCostCard = document.querySelector(".damage-dealer-cost")
+            damageDealerCostCard.innerHTML = randomDamageDealer.cost;
+            damageDealerCard.innerHTML = randomDamageDealer.name;
+            let damageDealerImage = document.querySelector(".damage-dealer-image")
+            damageDealerImage.src = randomDamageDealer.src;
+            
+            let filteredSupport = support.filter(supportCard => supportCard.deckType && supportCard.arena.includes("under&5") || supportCard.arena.includes("6") || supportCard.arena.includes("7") || supportCard.arena.includes("8") || supportCard.arena.includes("9") || supportCard.arena.includes("10") || supportCard.arena.includes("11") || supportCard.arena.includes("12") || supportCard.arena.includes("13") || supportCard.arena.includes("14"));
+            const randomSupport = filteredSupport[Math.floor(Math.random() * filteredSupport.length)];
+            let supportCard = document.querySelector(".support")
+            const supportCostCard = document.querySelector(".support-cost")
+            supportCostCard.innerHTML = randomSupport.cost;
+            supportCard.innerHTML = randomSupport.name;
+            let supportImage = document.querySelector(".support-image")
+            supportImage.src = randomSupport.src;
+            
+            const averageElixir = (randomBuilding.cost + randomAirTroop.cost + randomTroopThatGoesToTower.cost + randomSmallSpell.cost + randomBigSpell.cost + randomMiniTank.cost + randomDamageDealer.cost + randomSupport.cost) / 8;    
+            console.log("Average elixir cost of this deck is:", averageElixir.toFixed(1));
+            let averageElixirCard = document.querySelector(".avarage-elixir");
+            averageElixirCard.innerHTML = "Середня вартість еліксиру: " + averageElixir.toFixed(1);
+            if (averageElixir <= 3.0) {
+            averageElixirCard.style.color = "green";
+          } else if (averageElixir <= 4.0) {
+            averageElixirCard.style.color = "yellow";
+          } else {
+            averageElixirCard.style.color = "red";
+          }
+      }
+      if (arena === "15"){
+            let filteredBuildings = buildings.filter(building => building.arena.includes("under&5") || building.arena.includes("6") || building.arena.includes("7") || building.arena.includes("8") || building.arena.includes("9") || building.arena.includes("10") || building.arena.includes("11") || building.arena.includes("12") || building.arena.includes("13") || building.arena.includes("14") || building.arena.includes("15"));
+            const randomBuilding = filteredBuildings[Math.floor(Math.random() * filteredBuildings.length)];
+            let buildingCard = document.querySelector(".building")
+            let buildingCostCard = document.querySelector(".building-cost") 
+            buildingCard.innerHTML = randomBuilding.name;
+            buildingCostCard.innerHTML = randomBuilding.cost;
+            let buildingImage = document.querySelector(".building-image")
+            buildingImage.src = randomBuilding.src;
+            
+            let filteredAirTroops = airTroops.filter(airTroop => airTroop.arena.includes("under&5") || airTroop.arena.includes("6") || airTroop.arena.includes("7") || airTroop.arena.includes("8") || airTroop.arena.includes("9") || airTroop.arena.includes("10") || airTroop.arena.includes("11") || airTroop.arena.includes("12") || airTroop.arena.includes("13") || airTroop.arena.includes("14") || airTroop.arena.includes("15"));
+            const randomAirTroop = filteredAirTroops[Math.floor(Math.random() * filteredAirTroops.length)];
+            let airTroopCard = document.querySelector(".air-troop") 
+            let airTroopCostCard = document.querySelector(".air-troop-cost")
+            airTroopCostCard.innerHTML = randomAirTroop.cost;
+            airTroopCard.innerHTML = randomAirTroop.name;
+            let airTroopImage = document.querySelector(".air-troop-image")
+            airTroopImage.src = randomAirTroop.src;
+
+            let filteredTroopsThatGoToTower = troopsThatGoToTower.filter(troopThatGoesToTower => troopThatGoesToTower.arena.includes("under&5") || troopThatGoesToTower.arena.includes("6") || troopThatGoesToTower.arena.includes("7") || troopThatGoesToTower.arena.includes("8") || troopThatGoesToTower.arena.includes("9") || troopThatGoesToTower.arena.includes("10") || troopThatGoesToTower.arena.includes("11") 
+            || troopThatGoesToTower.arena.includes("12") || troopThatGoesToTower.arena.includes("13") || troopThatGoesToTower.arena.includes("14") || troopThatGoesToTower.arena.includes("15"));
+            const randomTroopThatGoesToTower = filteredTroopsThatGoToTower[Math.floor(Math.random() * filteredTroopsThatGoToTower.length)];
+            let winConditionCard = document.querySelector(".win-condition") 
+            let winConditionCostCard = document.querySelector(".win-condition-cost")
+            winConditionCostCard.innerHTML = randomTroopThatGoesToTower.cost;
+            winConditionCard.innerHTML = randomTroopThatGoesToTower.name;
+            let winConditionImage = document.querySelector(".win-condition-image")
+            winConditionImage.src = randomTroopThatGoesToTower.src;
+            
+            let filteredSmallSpells = smallSpells.filter(smallSpell => smallSpell.arena.includes("under&5") || smallSpell.arena.includes("6") || smallSpell.arena.includes("7") || smallSpell.arena.includes("8") || smallSpell.arena.includes("9") || smallSpell.arena.includes("10") || smallSpell.arena.includes("11") || smallSpell.arena.includes("12") || smallSpell.arena.includes("13") || smallSpell.arena.includes("14") 
+            || smallSpell.arena.includes("15"));    
+            const randomSmallSpell = filteredSmallSpells[Math.floor(Math.random() * filteredSmallSpells.length)];
+            let smallSpellCard = document.querySelector(".small-spell") 
+            let smallSpellCostCard = document.querySelector(".small-spell-cost")
+            smallSpellCostCard.innerHTML = randomSmallSpell.cost;
+            smallSpellCard.innerHTML = randomSmallSpell.name;
+            let smallSpellImage = document.querySelector(".small-spell-image")
+            smallSpellImage.src = randomSmallSpell.src;
+            
+            let filteredBigSpells = bigSpells.filter(bigSpell => bigSpell.arena.includes("under&5") || bigSpell.arena.includes("6") || bigSpell.arena.includes("7") || bigSpell.arena.includes("8") || bigSpell.arena.includes("9") || bigSpell.arena.includes("10") || bigSpell.arena.includes("11") || bigSpell.arena.includes("12") || bigSpell.arena.includes("13") || bigSpell.arena.includes("14") || bigSpell.arena.includes("15"));
+            const randomBigSpell = filteredBigSpells[Math.floor(Math.random() * filteredBigSpells.length)];
+            let bigSpellCard = document.querySelector(".big-spell")
+            let bigSpellCostCard = document.querySelector(".big-spell-cost")
+            bigSpellCostCard.innerHTML = randomBigSpell.cost; 
+            bigSpellCard.innerHTML = randomBigSpell.name;
+            let bigSpellImage = document.querySelector(".big-spell-image")
+            bigSpellImage.src = randomBigSpell.src;
+            
+            let filteredMiniTanks = miniTanks.filter(miniTank => miniTank.arena === ("under&5") || miniTank.arena === ("6") || miniTank.arena === ("7") || miniTank.arena === ("8") || miniTank.arena === ("9") || miniTank.arena === ("10") || miniTank.arena === ("11") || miniTank.arena === ("12") || miniTank.arena === ("13") || miniTank.arena === ("14") || miniTank.arena === ("15"));
+            const randomMiniTank = filteredMiniTanks[Math.floor(Math.random() * filteredMiniTanks.length)];
+            let miniTankCard = document.querySelector(".mini-tank")
+            let miniTankCostCard = document.querySelector(".mini-tank-cost")
+            miniTankCostCard.innerHTML = randomMiniTank.cost;
+            miniTankCard.innerHTML = randomMiniTank.name;
+            let miniTankImage = document.querySelector(".mini-tank-image")
+            miniTankImage.src = randomMiniTank.src;
+            
+            let filteredDamageDealers = damageDealers.filter(damageDealer => damageDealer.arena === ("under&5") || damageDealer.arena === ("6") || damageDealer.arena === ("7") || damageDealer.arena === ("8") || damageDealer.arena === ("9") || damageDealer.arena === ("10") || damageDealer.arena === ("11") || damageDealer.arena === ("12") || damageDealer.arena === ("13") || damageDealer.arena === ("14") || damageDealer.arena === ("15"));
+            const randomDamageDealer = filteredDamageDealers[Math.floor(Math.random() * filteredDamageDealers.length)];
+            let damageDealerCard = document.querySelector(".damage-dealer")
+            let damageDealerCostCard = document.querySelector(".damage-dealer-cost")
+            damageDealerCostCard.innerHTML = randomDamageDealer.cost;
+            damageDealerCard.innerHTML = randomDamageDealer.name;
+            let damageDealerImage = document.querySelector(".damage-dealer-image")
+            damageDealerImage.src = randomDamageDealer.src;
+            
+            let filteredSupport = support.filter(supportCard => supportCard.deckType && supportCard.arena.includes("under&5") || supportCard.arena.includes("6") || supportCard.arena.includes("7") || supportCard.arena.includes("8") || supportCard.arena.includes("9") || supportCard.arena.includes("10") || supportCard.arena.includes("11") || supportCard.arena.includes("12") || supportCard.arena.includes("13") || supportCard.arena.includes("14") || supportCard.arena.includes("15"));
+            const randomSupport = filteredSupport[Math.floor(Math.random() * filteredSupport.length)];
+            let supportCard = document.querySelector(".support")
+            const supportCostCard = document.querySelector(".support-cost")
+            supportCostCard.innerHTML = randomSupport.cost;
+            supportCard.innerHTML = randomSupport.name;
+            let supportImage = document.querySelector(".support-image")
+            supportImage.src = randomSupport.src;
+            
+            const averageElixir = (randomBuilding.cost + randomAirTroop.cost + randomTroopThatGoesToTower.cost + randomSmallSpell.cost + randomBigSpell.cost + randomMiniTank.cost + randomDamageDealer.cost + randomSupport.cost) / 8;    
+            console.log("Average elixir cost of this deck is:", averageElixir.toFixed(1));
+            let averageElixirCard = document.querySelector(".avarage-elixir");
+            averageElixirCard.innerHTML = "Середня вартість еліксиру: " + averageElixir.toFixed(1);
+            if (averageElixir <= 3.0) {
+            averageElixirCard.style.color = "green";
+          } else if (averageElixir <= 4.0) {
+            averageElixirCard.style.color = "yellow";
+          } else {
+            averageElixirCard.style.color = "red";
+          }
+      }
     if (arena === "16&above"){
       if (deckType === "all") {
           const randomBuilding = buildings[Math.floor(Math.random() * buildings.length)];
