@@ -234,6 +234,7 @@ width: 150px;
 height: 200px;   
 
 text-align: center;
+transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
 .card-text-div{
@@ -519,5 +520,28 @@ footer {
     max-width: 450px; /* зменшено на половину */
     margin: 1rem auto 0 auto; /* зменшено на половину */
     padding: 0 0.5rem; /* зменшено на половину */
+}
+
+.logo-subtitle:hover{
+    cursor:pointer;
+    color:rgb(144, 248, 41);
+    
+
+
+
+
+}
+
+.container-button:hover{
+    
+
+background: linear-gradient(180deg, #16AF28 0%, #12734C 100%);
+color:#000000;
+
+}
+
+.single-card-div:hover {
+    transform: scale(1.5);
+    background-color: #340D5D;
 }
 
