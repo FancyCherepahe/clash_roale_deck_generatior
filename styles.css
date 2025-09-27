@@ -545,3 +545,68 @@ color:#000000;
     background-color: #340D5D;
 }
 
+.fut_kor{
+    /* Frame 22 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 21px 29px;
+gap: 33px;
+
+width: 700px;
+height: 189px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.generator{
+    /* Frame 14 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 26px;
+
+width: 129px;
+height: 147px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.gen-text{
+    /* Генератор колод */
+
+width: 129px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #7495FF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
