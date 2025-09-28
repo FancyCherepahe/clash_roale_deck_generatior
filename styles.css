@@ -157,7 +157,7 @@ align-items: center;
 padding: 0px;
 gap: 31px;
 
-width: 450px;
+width: auto;
 height: 75px;
 
 background: linear-gradient(90deg, #FD8E10 0%, #E21F1F 100%);
@@ -170,6 +170,9 @@ flex-grow: 0;
 cursor: pointer;
 
 color:white;
+
+padding-left: 2%;
+padding-right: 2%
 }
 
 .deck-container{
@@ -279,7 +282,7 @@ transition: transform 0.5s ease, background-color 0.5s ease, ;
 
 .tips-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .tip{
@@ -292,14 +295,15 @@ transition: transform 0.5s ease, background-color 0.5s ease, ;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .tips-container{
     /* Component 15 */
 
 position: relative;
-width: 1230px;
-height: 300px;
+width: 60%;
+height: auto;
 margin-top: 10%;
 margin-left: auto;
 margin-right: auto;
@@ -307,6 +311,7 @@ margin-right: auto;
 background: radial-gradient(50% 50% at 50% 50%, #6C1BC3 0%, #340D5D 100%);
 border: 3px solid rgba(253, 241, 241, 0.55);
 border-radius: 15px;
+
 
 }
 
@@ -337,7 +342,7 @@ text-align: center;
 align-items: center;
 
 width: 50%;
-height: 350px;
+height: auto;
 gap: 20px;
 margin-top: 5%;
 }
