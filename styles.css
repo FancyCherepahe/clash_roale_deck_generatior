@@ -10,11 +10,6 @@
     font-style: normal;
 }
 
-body {
-    min-height: 100vh;
-    background: linear-gradient(163.03deg, #333DF6 0.54%, #9C14B1 49.79%, #3506A3 100%);
-}
-
 /* Ваш header */
 header {
     margin: 0; /* прибираємо зовнішні відступи */
@@ -22,7 +17,6 @@ header {
 }
 /* === BODY === */
 body {
-    min-height: 100vh;
     background: linear-gradient(163.03deg, #333DF6 0.54%, #9C14B1 49.79%, #3506A3 100%);
 }
 
@@ -637,4 +631,5 @@ footer {
 }
 .generator:hover{
     transform: scale(1.2);
+
 }
