@@ -154,6 +154,10 @@ generateButton.addEventListener("click", function() {
         { name: "Mother Witch", cost: 4, src:"support_icons/MotherWitchCard.webp", deckType: ["all", "control", "beatdown", "bridgeSpam"], arena: "15" },
         { name: "Princess", cost: 3, src:"support_icons/PrincessCard.webp", deckType: ["all", "cycle", "control", "bait", "bridgeSpam"], arena: "11" },
     ];
+      if (arena === "noChoose"){
+        alert("Choose your arena!")
+        return
+      }
       if (arena === "under&5"){
         let filteredBuildings = buildings.filter(building => building.arena.includes("under&5"));
             const randomBuilding = filteredBuildings[Math.floor(Math.random() * filteredBuildings.length)];
