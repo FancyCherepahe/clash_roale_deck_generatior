@@ -17,7 +17,9 @@ header {
 }
 /* === BODY === */
 body {
-    background: linear-gradient(163.03deg, #333DF6 0.54%, #9C14B1 49.79%, #3506A3 100%);
+    /* Frame 1 */
+    background: linear-gradient(163.03deg, #333DF6 0.54%, #80348C 49.79%, #1B054C 100%);
+
 }
 
 .justify-div{
@@ -355,6 +357,123 @@ margin-top: 100px;
 
 }
 
+.most-popular-decks{
+    margin-top: 3%
+}
+
+.most-popular-decks-div{
+    /* Rectangle 7 */
+
+box-sizing: border-box;
+
+background: linear-gradient(180deg, #290768  0%,#160629 100%);
+border: 4px solid #33094C;
+border-radius: 30px;
+
+width: 60%;
+
+margin-left: auto;
+margin-right: auto;
+margin-top: 6%;
+
+}
+
+.most-popular-decks-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.most-popular-decks-title-cold-part{
+    color: #8EFE0E;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.most-popular-decks-title{
+    /* Найпопулярніші колоди за всю історію */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+line-height: 67px;
+/* identical to box height */
+
+color: white
+
+}
+
+.most-popular-decks-subtitles{
+    /* Вивчай найкращі колоди за весь час які були створені найкращими гравцями */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;   
+text-align: center;
+
+color: #A69A9A;
+
+}
+
+.margin-botton6{
+    margin-bottom: 4%;
+}
+
+.most-popular-deck-div{
+    /* Rectangle 8 */
+
+    box-sizing: border-box;
+
+    background: linear-gradient(180deg, #2D19C3 0%, #1B095D 100%);
+    border: 4px solid #1B0541;
+    border-radius: 15px;
+
+    gap: 5%;
+
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+}
+
+.cards-div-for-best-decks{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.single-card-div-for-best-decks{
+    background: linear-gradient(157.99deg, #9561A5 1.91%, #7D27A3 98.25%);
+    border: 3px solid #000000;
+    border-radius: 15px;
+
+    width: 100px;
+    height: 150px;   
+
+    text-align: center;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.card-image-for-best-decks{
+    padding-top: 5%;
+    width: 80px;
+    height: 100px;
+}
+
+.card-text-for-best-decks{
+    font-size: small;
+}
+
+.card-text-div-for-best-decks{
+    gap: 20px;
+}
+
 /* === MAIN TEXT === */
 .main-text {
     display: flex;
@@ -488,7 +607,7 @@ footer {
     padding: 2rem 0.5rem; /* зменшено на половину */
     gap: 1.5rem; /* зменшено на половину */
     width: 100%;
-    background: linear-gradient(90.4deg, #0B2C73 0.31%, #9E27A9 50.46%, #3A1BAA 99.66%);
+    background: linear-gradient(90.4deg, #010a1e 0.31%, #57165d 50.46%, #0a012e 99.66%);
     box-sizing: border-box;
     border-top: 2px solid rgba(255, 255, 255, 0.553);
     margin-top: 10%; /* відокремлюємо від основного контенту */
@@ -594,6 +713,9 @@ footer {
     color: #000000;
 }
 
+.single-card-div{
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
 
 .single-card-div:hover {
     transform: scale(1.5) rotateZ(-2deg);
@@ -630,6 +752,12 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 .generator:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) rotateZ(-1deg);
+}
 
+.single-card-div-for-best-decks:hover{
+    transform: scale(1.2) rotateZ(-2deg);
+    filter: hue-rotate(60deg) brightness(1.2);
+    box-shadow: 0 0 25px rgba(115, 0, 255, 0.7), 
+    0 0 50px rgba(115, 0, 255, 0.5);
 }
