@@ -56,10 +56,14 @@ body {
     margin-right: auto;
 }
 
-.logo {
-    width: 200px;
-    height: 200px;
-    transform: rotate(15deg);
+.logotype{
+    width: 80px;
+    height: 100px;
+}
+
+.footer-logotype{
+    width: 80px;
+    height: 11я0px;
 }
 
 .logo-text {
