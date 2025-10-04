@@ -349,7 +349,9 @@ width: 50%;
 height: auto;
 gap: 20px;
 margin-top: 5%;
+padding: 2%;
 }
+
 
 .deck-type-text{
 
@@ -360,10 +362,14 @@ font-size: 20px;
 line-height: 39px;
 text-align: center;
 
-color: #FFFFFF;
+color: #ffffff98;
 
-margin-top: 100px; 
+margin-top: 10px; 
 
+}
+
+.deck-type-title{
+    color: whitesmoke;
 }
 
 .most-popular-decks{
@@ -755,6 +761,7 @@ footer {
     filter: hue-rotate(60deg) brightness(1.2);
     box-shadow: 0 0 25px rgba(115, 0, 255, 0.7), 
     0 0 50px rgba(115, 0, 255, 0.5);
+    color: white;
 }
 
 .generator{
@@ -769,4 +776,12 @@ footer {
     filter: hue-rotate(60deg) brightness(1.2);
     box-shadow: 0 0 25px rgba(115, 0, 255, 0.7), 
     0 0 50px rgba(115, 0, 255, 0.5);
+}
+
+.logo-for-hover{
+    transition: transform 0.3s ease;
+}
+
+.logo-for-hover:hover{
+    transform: scale(1.2);
 }
