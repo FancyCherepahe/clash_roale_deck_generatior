@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ClashBuilder</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="icon" href="emotes/logotype.png" type="image/ppg">
 </head>
 <body>
     <div class = 'nav-bar'>
         <div class = 'logo-container'>
-            <img class ='logo' src="emotes/logo.png" alt = 'Logo'>
+            <img class ='logotype' src="emotes\logotype.png" alt = 'Logo'>
             <div class = 'logo-text'>
                 <h1 class = 'logo-title'><span class="yellow-part-of-title">Clash</span>Builder</h1>
                 <p class = 'logo-subtitle'>Генератор колод</p>
@@ -20,19 +20,18 @@
         <div class="nav-links">
             <span>
                 <img src="emotes/emote1.png" class="emote-size-1" alt="emote1">
-                <a class="logo-subtitle">Генератор</a>
+                <a href="#generator" class="logo-subtitle">Генератор</a>
             </span>
-            <a class="logo-subtitle">Картки</a>
-            <a class="logo-subtitle">Колоди</a>
+            <a href="#tips" class="logo-subtitle">Поради</a>
             <span>
-                <a class="logo-subtitle">Мета</a>
+                <a href="#meta-decks" class="logo-subtitle">Метові колоди</a>
                 <img src="emotes/emote2.png" class="emote-size-1" alt="emote2">
             </span>
-        </div>
+</div>
     </div>
   
     <main>
-        <div class = 'main-text'>
+        <div id="generator" class="main-text">
         <div class = "container-main-text">
             <div class = 'slogan'>
                 <h1 class = 's-m'>Генератор</h1>
@@ -152,7 +151,7 @@
                 </div>
             </div>
                 
-            <div class="tips-container">
+            <div id="tips" class="tips-container">
                 <div class="tips-title-container">
                     <img src="emotes/emote3.png" class="emote-size-2" alt="emote3">
                     <h1 class="tips-title" class="title-shift">Поради для створення колод</h1>
@@ -161,19 +160,27 @@
                     <div class="tip">
                         <img src="emotes/emote4.png" class="emote-for-tips" alt="emote4">
                         <h2 class="tips-title">Баланс</h2>
-                        <p class="tips-text">Тримайте середню вартість еліксіру 3.5-4.5 для оптимального балансу</p>
+                        <p class="tips-text">Тримайте середню вартість еліксіру 3.5-4.5 для балансу</p>
                     </div>     
                     <div class="tip">
                         <img src="emotes/emote5.png" class="emote-for-tips" alt="emote5">
                         <h2 class="tips-title">Захист</h2>
                         <p class="tips-text">Включайте картки для захисту від повітряних та наземних атак</p>
                     </div>     
+                </div>
+                <div class="tips-div">
                     <div class="tip">
                         <img src="emotes/emote6.png" class="emote-for-tips" alt="emote6">
                         <h2 class="tips-title">Синергія</h2>
                         <p class="tips-text">Вибирайте картки, що доповнюють одна одну в комбо</p>
-                    </div>
-                </div>     
+                    </div> 
+                    <div class="tip">
+                        <img src="emotes/emote9.png" class="emote-for-tips" alt="emote9">
+                        <h2 class="tips-title">Атака</h2>
+                        <p class="tips-text">Складайте атаку правильно, спочатку танк, а за ним підтримку</p>
+                    </div>    
+                </div>
+                
             </div>
             <div class="deck-type-explain">
                 <div id="deck-type-first-div" class="deck-type-cycle">
@@ -226,7 +233,7 @@
                     </p>
                 </div>
             </div>    
-            <div class="most-popular-decks-div">
+            <div id="meta-decks" class="most-popular-decks-div">
                 <div class="most-popular-decks-text">
                     <h1 class="most-popular-decks-title-cold-part">Найпопулярніші</h1><h1 class="most-popular-decks-title"> колоди за всю історію</h1>    
                 </div>
@@ -437,7 +444,7 @@
 <footer>
     <div class ='logo-footer'>
          <div class = 'logo-footer-container'>
-             <img class ='logo' src="emotes/logo.png">
+             <img class ='footer-logotype ' src="emotes/logotype.png">
              <div class="text-logo-container">
                  <h1 class="f-logo-text">Clash Builder</h1>
                  <p class="s-logo-text">Генератор колод для Clash Royal</p>
@@ -468,5 +475,6 @@
     <script defer src="script.js"></script>
 </footer>
 </html>
+
 
 

@@ -56,10 +56,14 @@ body {
     margin-right: auto;
 }
 
-.logo {
-    width: 200px;
-    height: 200px;
-    transform: rotate(15deg);
+.logotype{
+    width: 80px;
+    height: 100px;
+}
+
+.footer-logotype{
+    width: 80px;
+    height: 11я0px;
 }
 
 .logo-text {
@@ -157,7 +161,7 @@ align-items: center;
 padding: 0px;
 gap: 31px;
 
-width: 450px;
+width: auto;
 height: 75px;
 
 background: linear-gradient(90deg, #FD8E10 0%, #E21F1F 100%);
@@ -170,6 +174,9 @@ flex-grow: 0;
 cursor: pointer;
 
 color:white;
+
+padding-left: 2%;
+padding-right: 2%
 }
 
 .deck-container{
@@ -279,7 +286,7 @@ transition: transform 0.5s ease, background-color 0.5s ease, ;
 
 .tips-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .tip{
@@ -292,14 +299,15 @@ transition: transform 0.5s ease, background-color 0.5s ease, ;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .tips-container{
     /* Component 15 */
 
 position: relative;
-width: 1230px;
-height: 300px;
+width: 60%;
+height: auto;
 margin-top: 10%;
 margin-left: auto;
 margin-right: auto;
@@ -307,6 +315,7 @@ margin-right: auto;
 background: radial-gradient(50% 50% at 50% 50%, #6C1BC3 0%, #340D5D 100%);
 border: 3px solid rgba(253, 241, 241, 0.55);
 border-radius: 15px;
+
 
 }
 
@@ -337,10 +346,12 @@ text-align: center;
 align-items: center;
 
 width: 50%;
-height: 350px;
+height: auto;
 gap: 20px;
 margin-top: 5%;
+padding: 2%;
 }
+
 
 .deck-type-text{
 
@@ -351,10 +362,14 @@ font-size: 20px;
 line-height: 39px;
 text-align: center;
 
-color: #FFFFFF;
+color: #ffffff98;
 
-margin-top: 100px; 
+margin-top: 10px; 
 
+}
+
+.deck-type-title{
+    color: whitesmoke;
 }
 
 .most-popular-decks{
@@ -746,6 +761,7 @@ footer {
     filter: hue-rotate(60deg) brightness(1.2);
     box-shadow: 0 0 25px rgba(115, 0, 255, 0.7), 
     0 0 50px rgba(115, 0, 255, 0.5);
+    color: white;
 }
 
 .generator{
@@ -760,4 +776,21 @@ footer {
     filter: hue-rotate(60deg) brightness(1.2);
     box-shadow: 0 0 25px rgba(115, 0, 255, 0.7), 
     0 0 50px rgba(115, 0, 255, 0.5);
+}
+
+.logo-for-hover{
+    transition: transform 0.3s ease;
+}
+
+.logo-for-hover:hover{
+    transform: scale(1.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
