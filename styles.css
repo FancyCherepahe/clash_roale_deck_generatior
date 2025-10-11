@@ -8,15 +8,7 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+    scroll-behavior: smooth;
 }
 
 /* Ваш header */
@@ -104,6 +96,8 @@ body {
     line-height: 29px;
     color: rgba(201, 191, 191, 0.5);
     margin-top: 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-links{
@@ -795,3 +789,4 @@ footer {
     transform: scale(1.2);
 
 }
+
