@@ -10,6 +10,14 @@
     font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
 /* Ваш header */
 header {
     margin: 0; /* прибираємо зовнішні відступи */
@@ -784,13 +792,4 @@ footer {
 
 .logo-for-hover:hover{
     transform: scale(1.2);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
