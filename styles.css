@@ -10,6 +10,14 @@
     font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
 /* Ваш header */
 header {
     margin: 0; /* прибираємо зовнішні відступи */
