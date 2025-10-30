@@ -8,6 +8,7 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -104,6 +105,8 @@ body {
     line-height: 29px;
     color: rgba(201, 191, 191, 0.5);
     margin-top: 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-links{
@@ -793,4 +796,6 @@ footer {
 
 .logo-for-hover:hover{
     transform: scale(1.2);
+
 }
+
